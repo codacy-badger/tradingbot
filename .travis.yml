@@ -1,0 +1,16 @@
+language: python
+matrix:
+  include:
+    - python: 3.6
+    - python: 3.7
+      dist: xenial
+before_install:
+  - pip install codecov
+install:
+  - pip install install/requirements.txt
+before_script:
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+script:
+  - coverage run --include=src/*.py -m unittest tests/test_*.py
+after_success:
+  - codecov
