@@ -8,6 +8,10 @@ echo -e "Executing in $PWD\n"
 # Install Python dependencies
 python -m pip install -r requirements.txt
 
+# Install Git hooks
+python -m pip install pre-commit
+pre-commit install
+
 popd > /dev/null
 
 echo -e "\nDone!"

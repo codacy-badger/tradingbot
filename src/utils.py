@@ -1,6 +1,6 @@
 from typing import Any
 
-__all__ = ['some_function']
+__all__ = ["some_function"]
 
 
 def some_function(arg: Any) -> Any:
