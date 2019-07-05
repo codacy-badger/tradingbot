@@ -1,7 +1,6 @@
 short = -1
 long = 1
-strategy = "turtle.py"
-graph = "BTCUSD_15m.json"
+
 
 class Trade:
     def __init__(self,amount,fee,type):
