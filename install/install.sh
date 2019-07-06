@@ -9,7 +9,6 @@ echo -e "Executing in $PWD\n"
 python -m pip install -r requirements.txt
 
 # Install Git hooks
-python -m pip install pre-commit
 pre-commit install
 
 popd > /dev/null
